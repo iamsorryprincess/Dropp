@@ -1,0 +1,153 @@
+@font-face{
+	font-family: "Oswald";
+	src: url("../fonts/Oswald/Oswald-Bold.ttf");
+	src: url("../fonts/Oswald/Oswald-Regular.ttf");
+}
+
+body{
+	font-family: "Oswald", Arial, Helvetica, sans-serif;
+	margin: 0;
+	background-color: #FFFFFF;
+}
+
+.main-container{
+	min-width: 768px;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.header{
+	color: #474444;
+}
+
+.header__image{
+	font-weight: normal;
+	font-size: 70px;
+	padding: 16px 0;
+	width: 17.094017%;
+	float: left;
+}
+
+.header__menu{
+	float: right;
+}
+
+.list{
+	margin: 0;
+	padding: 0;
+}
+
+.link{
+	text-decoration: none;
+	color: inherit;
+}
+
+.menu__list{
+	list-style-type: none;
+}
+
+.menu__item{
+	display: inline-block;
+	vertical-align: top;
+	font-weight: bold;
+	font-size: 17px;
+	padding: 42.5px 15px;
+	cursor: pointer;
+	margin-right: 
+}
+
+.menu__item:hover{
+	background-color: #FD5433;
+	color: #FFFFFF;
+}
+
+.home-container{
+	background-image: url("../images/Banner_IMG.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-width: 100vw;
+}
+
+.home__content{
+	padding: 282.5px 0;	
+}
+
+.home__inner{
+	position: relative;
+}
+
+.home__text{
+	color: #FFFFFF;
+	font-size: 120px;
+}
+
+.button{
+	outline: none;
+	cursor: pointer;
+	border: none;
+	font-family: inherit;
+	margin: 0;
+}
+
+.home__button{
+	background-color: #FD5433;
+	color: #FFFFFF;
+	font-size: 32px;
+	font-weight: bold;
+	padding: 5px 66px;
+	border-radius: 5px;
+	position: absolute;
+	left: 50%;
+	bottom: -78px;
+	transform: translateX(-50%);
+}
+
+.services__inner{
+	border-top: 1px solid #828282;
+	border-bottom: 1px solid #828282;
+	padding: 65px 0;
+}
+
+.services__title{
+	font-weight: bold;
+	font-size: 32px;
+	color: #FD5433;
+	text-align: center;
+}
+
+.services__widget{
+	width: 31%;
+	margin-right: 30px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.services__widget:last-child{
+	margin-right: 0;
+}
+
+.widget__image{
+	padding: 0 25%;
+}
+
+.widget__title{
+	color: #3D3C3C;
+	font-weight: bold;
+	font-size: 30px;
+	margin: 35px 0;
+	text-align: center;
+}
+
+.widget__content{
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: normal;
+	text-align: center;
+	padding: 0 30px;
+}
