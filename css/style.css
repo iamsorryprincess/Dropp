@@ -269,7 +269,7 @@ a{
 	content: "";
 	position: absolute;
 	left: 50%;
-	bottom: -55%;
+	bottom: -126px;
 	transform: translateX(-50%);
 	border: 22px solid transparent;
 	border-top: 42px solid #FFFFFF;
@@ -367,6 +367,14 @@ a{
 	margin-left: 0;
 }
 
+.about__link:hover{
+	outline: 2px solid #FFFFFF;
+}
+
+.about__link:focus{
+	outline: 2px solid #FFFFFF;
+}
+
 .latest-posts__inner{
 	padding-top: 100px;
 	padding-bottom: 100px;
@@ -413,12 +421,30 @@ a{
 	color: #3D3C3C;
 }
 
+.post__link:hover{
+	color: #FD5433;
+}
+
+.post__link:focus{
+	color: #FD5433;
+	outline: none;
+}
+
 .post__time{
 	font-size: 15px;
 	font-weight: bold;
 	color: #686868;
 	padding-bottom: 3.5%;
+	position: relative;
+}
+
+.post__time:after{
+	content: "";
+	position: absolute;
 	border-bottom: 5px solid #FD5433;
+	left: 0;
+	bottom: -5px;
+	width: 60%;
 }
 
 .post__text{
@@ -427,4 +453,105 @@ a{
 	color: #3D3C3C;
 	margin-top: 13.227268%;
 	margin-bottom: 0;
+}
+
+.contact__container{
+	background-image: url("../images/bgcontact.png");
+	background-size: cover;
+}
+
+.contact__form{
+	padding-top: 30px;
+	padding-bottom: 85px;
+}
+
+.message-form__label{
+	display: inline-block;
+	vertical-align: top;
+	width: 47.717949%;
+	font-size: 20px;
+	font-family: Arial;
+	color: #FD5433;
+}
+
+.message-form__label:nth-child(2n){
+	margin-left: 3.5641%;
+}
+
+.message-form__field{
+	width: 96%;
+	font-size: inherit;
+	font-family: inherit;
+	outline-color: #FD5433;
+	padding: 20px 0 20px 20px;
+	border: 1px solid #CAC9C9;
+}
+
+.message-form__field::-moz-placeholder{
+	color: #FD5433;
+}
+
+.message-form__field::-webkit-input-placeholder{
+	color: #FD5433;
+}
+
+.message-form__field:-ms-input-placeholder{
+	color: #FD5433;
+}
+
+.message-form__field::-ms-input-placeholder{
+	color: #FD5433;
+}
+
+.message-form__field::placeholder{
+	color: #FD5433;
+}
+
+.message-form__textarea{
+	width: 100%;
+	margin-top: 22px;
+	margin-bottom: 22px;
+}
+
+.message-form__textarea .message-form__field{
+	padding-right: 1.3675214%;
+}
+
+.message-form__button{
+	background-color: #FD5433;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-family: inherit;
+	font-size: 26px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: inset 0px 3px 12px -3px #FFFFFF;
+	width: 100%;
+	cursor: pointer;
+	transition-duration: .7s;
+}
+
+.message-form__button:hover{
+	background-color: #C94120;
+}
+
+.message-form__button:focus{
+	background-color: #C94120;
+	outline: none;
+}
+
+.contact__copyright{
+	padding-top: 26.56px;
+	padding-bottom: 26.56px;
+	border-top: 1px solid #FFFFFF;
+	font-size: 18px;
+	font-family: Arial;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.contact__text_bold{
+	font-weight: bold;
 }
