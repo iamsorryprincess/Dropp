@@ -509,7 +509,6 @@ a{
 .message-form__textarea{
 	width: 100%;
 	margin-top: 22px;
-	margin-bottom: 22px;
 }
 
 .message-form__textarea .message-form__field{
@@ -517,6 +516,7 @@ a{
 }
 
 .message-form__button{
+	margin-top: 22px;
 	background-color: #FD5433;
 	color: #FFFFFF;
 	font-weight: bold;
