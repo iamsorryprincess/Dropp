@@ -120,6 +120,8 @@ a{
 .home__content{
 	padding-top: 282.5px;
 	padding-bottom: 282.5px;
+	position: relative;
+	text-align: center;
 }
 
 .home__inner{
@@ -141,7 +143,7 @@ a{
 	border-radius: 5px;
 	position: absolute;
 	left: 50%;
-	bottom: -78px;
+	bottom: 204px;
 	transform: translateX(-50%);
 	box-shadow: inset 0px 3px 12px -3px #FFFFFF;
 }
@@ -226,7 +228,7 @@ a{
 
 .portfolio__link{
 	float: left;
-	width: 16%;
+	width: 16.66%;
 	margin-bottom: -5px;
 	transition-duration: 1s;
 }
@@ -330,22 +332,18 @@ a{
 	display: inline-block;
 	vertical-align: baseline;
 	background-color: #FFFFFF;
-	color: #FD5433;
 }
 
 .bar__progress[value]::-webkit-progress-bar{
-	background-color: #FFFFFF;
-	color: #FD5433;
+	background-color: #FD5433;
 }
 
 .bar__progress[value]::-webkit-progress-value{
 	background-color: #FFFFFF;
-	color: #FD5433;
 }
 
 .bar__progress[value]::-moz-progress-bar{
 	background-color: #FFFFFF;
-	color: #FD5433;
 }
 
 .bar__value{
@@ -368,11 +366,12 @@ a{
 }
 
 .about__link:hover{
-	outline: 2px solid #FFFFFF;
+	opacity: .6;
 }
 
 .about__link:focus{
-	outline: 2px solid #FFFFFF;
+	opacity: .6;
+	outline: none;
 }
 
 .latest-posts__inner{
@@ -528,7 +527,7 @@ a{
 	border: none;
 	border-radius: 5px;
 	box-shadow: inset 0px 3px 12px -3px #FFFFFF;
-	width: 100%;
+	width: 99.4%;
 	cursor: pointer;
 	transition-duration: .7s;
 }
