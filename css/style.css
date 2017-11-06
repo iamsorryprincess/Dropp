@@ -107,19 +107,15 @@ a{
 
 .home-container{
 	background-image: url("../images/Banner_IMG.png");
-	background-color: #515151;	
-	background-repeat: no-repeat;
-	background-size: cover;	
+	background-color: #515151;
+	background-size: cover;
 	min-width: 798px;
-}
-
-.home__mask{
-	background-color: rgba(0, 0, 0, .3);
+	box-shadow: inset 0px 0px 0px 9999px rgba(0, 0, 0, .33);
 }
 
 .home__content{
-	padding-top: 282.5px;
-	padding-bottom: 282.5px;
+	padding-top: 170.5px;
+	padding-bottom: 394.5px;
 	position: relative;
 	text-align: center;
 }
@@ -134,16 +130,23 @@ a{
 	font-size: 120px;
 }
 
-.home__link{
+.button{
 	background-color: #FD5433;
 	color: #FFFFFF;
-	font-size: 32px;
 	font-weight: bold;
-	padding: 5px 66px;
+	font-family: inherit;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.home__link{
+	font-size: 32px;
+	padding-right: 66px;
+	padding-left: 66px;
 	border-radius: 5px;
 	position: absolute;
 	left: 50%;
-	bottom: 204px;
+	bottom: 315px;
 	transform: translateX(-50%);
 	box-shadow: inset 0px 3px 12px -3px #FFFFFF;
 }
@@ -164,18 +167,18 @@ a{
 .section__title{
 	color: #FD5433;
 	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 26.56px;
+	padding-bottom: 26.56px;
 }
 
 .section__title_border_top{
-	padding-top: 26.56px;
 	border-top: 1px solid #828282;
-	margin-top: 0;
 }
 
 .section__title_border_bot{
-	padding-bottom: 26.56px;
 	border-bottom: 1px solid #828282;
-	margin-bottom: 0;
 }
 
 .services__title{
@@ -206,8 +209,24 @@ a{
 
 .service__title{
 	color: #3D3C3C;
-	margin-top: 35px;
-	margin-bottom: 35px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 205px;
+	padding-bottom: 35px;
+	background-repeat: no-repeat;
+	background-position-x: center;
+}
+
+.service__title_pc{
+	background-image: url("../images/pc_icon.png");
+}
+
+.service__title_pen{
+	background-image: url("../images/pen_icon.png");
+}
+
+.service__title_mic{
+	background-image: url("../images/mic_icon.png");
 }
 
 .service__content{
@@ -517,15 +536,8 @@ a{
 
 .message-form__button{
 	margin-top: 22px;
-	background-color: #FD5433;
-	color: #FFFFFF;
-	font-weight: bold;
-	font-family: inherit;
 	font-size: 26px;
-	padding-top: 5px;
-	padding-bottom: 5px;
 	border: none;
-	border-radius: 5px;
 	box-shadow: inset 0px 3px 12px -3px #FFFFFF;
 	width: 99.4%;
 	cursor: pointer;
