@@ -487,20 +487,21 @@ p{
 	font-size: 0;
 }
 
-.message-form__label{
+.contact__text-box{
 	display: inline-block;
 	vertical-align: top;
 	width: 48.717949%;
 	font-size: 20px;
 	font-family: Arial;
 	color: #FD5433;
+	position: relative;
 }
 
-.message-form__label:nth-child(2n){
+.contact__text-box:nth-child(2n){
 	margin-left: 2.5641%;
 }
 
-.message-form__field{
+.text-box__field{
 	box-sizing: border-box;
 	width: 100%;
 	font-size: inherit;
@@ -508,6 +509,13 @@ p{
 	outline-color: #FD5433;
 	padding: 20px;
 	border: 1px solid #CAC9C9;
+}
+
+.text-box__text{
+	position: absolute;
+	top: 22px;
+	left: 20px;
+	transition-duration: .7s;
 }
 
 .message-form__field::-moz-placeholder{
@@ -535,7 +543,7 @@ p{
 	margin-top: 22px;
 }
 
-.message-form__textarea .message-form__field{
+textarea.text-box__field{
 	resize: none;
 }
 

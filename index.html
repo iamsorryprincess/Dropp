@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Проект Dropp</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script src="scripts/TextBox.js"></script>
 </head>
 <body>
 	<div class="page">
@@ -300,14 +301,17 @@
 			<h2 class="section__title section__title_border_top">CONTACT US</h2>
 			<div class="contact__container">
 				<form class="message-form contact__form main-container" method="post" action="#0">
-					<label class="message-form__label">
-						<input class="message-form__field" type="text" name="name" placeholder="Your name here" required>
+					<label class="text-box contact__text-box">
+						<input class="text-box__field" type="text" name="name" required>
+						<span class="text-box__text">Your name here</span>
 					</label>
-					<label class="message-form__label">
-						<input class="message-form__field" type="email" name="email" placeholder="Email address here" required>
+					<label class="text-box contact__text-box">
+						<input class="text-box__field" type="email" name="email" required>
+						<span class="text-box__text">Email address here</span>
 					</label>
-					<label class="message-form__label message-form__textarea">
-						<textarea class="message-form__field" cols="30" rows="10" name="message" placeholder="Your message here" required></textarea>
+					<label class="text-box contact__text-box message-form__textarea">
+						<textarea class="text-box__field" cols="30" rows="10" name="message" required></textarea>
+						<span class="text-box__text">Your message here</span>
 					</label>
 					<button class="message-form__button button" type="submit">SEND MESSAGE NOW</button>
 				</form>
