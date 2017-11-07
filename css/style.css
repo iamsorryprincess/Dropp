@@ -8,6 +8,7 @@ body{
 	font-family: "Oswald", Arial, Helvetica, sans-serif;
 	margin: 0;
 	background-color: #FFFFFF;
+	font-size: 13px;
 }
 
 h1{
@@ -50,30 +51,23 @@ a{
 	margin: 0 auto;
 }
 
-.clearfix:after{
-	content: "";
-	display: block;
-	clear: both;
-}
-
 .header{
 	color: #474444;
 	min-width: 798px;
 }
 
+.header__inner{
+	display: flex;
+	justify-content: space-between;
+}
+
 .header__logo{
 	margin-top: 0;
 	margin-bottom: 0;
-	padding-bottom: 6px;
-	float: left;
 }
 
 .header__char{
 	color: #FD5433;
-}
-
-.header__menu{
-	float: right;
 }
 
 .menu__list{
@@ -85,12 +79,10 @@ a{
 
 .menu__list-item{
 	display: inline-block;
-	cursor: pointer;
 }
 
 .menu__link{
 	display: inline-block;
-	vertical-align: top;
 	padding: 42.5px 15px;
 }
 
@@ -114,15 +106,13 @@ a{
 }
 
 .home__content{
-	padding-top: 170.5px;
-	padding-bottom: 394.5px;
-	position: relative;
+	padding-top: 195.5px;
+	padding-bottom: 369.5px;
 	text-align: center;
 }
 
 .home__inner{
-	position: relative;
-	text-align: center;
+	margin-top: 48px;
 }
 
 .home__text{
@@ -141,13 +131,11 @@ a{
 
 .home__link{
 	font-size: 32px;
+	display: inline-block;
+	vertical-align: top;
 	padding-right: 66px;
 	padding-left: 66px;
 	border-radius: 5px;
-	position: absolute;
-	left: 50%;
-	bottom: 315px;
-	transform: translateX(-50%);
 	box-shadow: inset 0px 3px 12px -3px #FFFFFF;
 }
 
@@ -181,6 +169,24 @@ a{
 	border-bottom: 1px solid #828282;
 }
 
+.description__content{
+	font-size: 16px;
+	font-family: Arial;
+}
+
+.description__text{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.description__item{
+	margin-bottom: 10px;
+}
+
+.description__item:last-child{
+	margin-bottom: 0;
+}
+
 .services__title{
 	padding-bottom: 26.56px;
 	border-bottom: 1px solid #828282;
@@ -199,15 +205,12 @@ a{
 	margin-right: 2.1641026%;
 }
 
-.services__item:last-child{
+.services__item:nth-child(3n){
 	margin-right: 0;
 }
 
-.service__header{
-	text-align: center;
-}
-
 .service__title{
+	text-align: center;
 	color: #3D3C3C;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -230,14 +233,14 @@ a{
 }
 
 .service__content{
-	padding-left: 7.5%;
-	padding-right: 7.5%;
+	font-family: Arial;
+	font-size: 16px;
 }
 
 .service__text{
-	margin: 0;
-	font-family: Arial;
 	text-align: center;
+	padding-left: 7.5%;
+	padding-right: 7.5%;
 }
 
 .portfolio__inner{
@@ -290,15 +293,15 @@ a{
 	content: "";
 	position: absolute;
 	left: 50%;
-	bottom: -126px;
+	bottom: -125px;
 	transform: translateX(-50%);
 	border: 22px solid transparent;
 	border-top: 42px solid #FFFFFF;
 }
 
 .about__icon{
+	display: block;
 	width: 100%;
-	cursor: pointer;
 }
 
 .about__container{
@@ -309,31 +312,13 @@ a{
 .about__inner{
 	padding-top: 45px;
 	padding-bottom: 45px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .about__description{
 	width: 45%;
 	color: #FFFFFF;
-	display: inline-block;
-	vertical-align: top;
-	margin-left: 6.5833333%;
-}
-
-.about__description:first-child{
-	margin-left: 0;
-}
-
-.description__content{
-	font-size: 16px;
-	font-family: Arial;
-}
-
-.description__item{
-	margin-bottom: 10px;
-}
-
-.description__item:last-child{
-	margin-bottom: 0;
 }
 
 .bar__item{
@@ -393,6 +378,10 @@ a{
 	outline: none;
 }
 
+.about__service-icon{
+	display: block;
+}
+
 .latest-posts__inner{
 	padding-top: 100px;
 	padding-bottom: 100px;
@@ -429,14 +418,29 @@ a{
 }
 
 .post__image{
+	display: block;
 	width: 100%;
 }
 
 .post__title{
 	margin-top: 0;
 	margin-bottom: 3.5%;
+	font-family: "Oswald";
 	font-size: 25px;
 	color: #3D3C3C;
+}
+
+.post__link-image{
+	display: block;
+	transition-duration: .7s;
+}
+
+.post__link-image:hover{
+	opacity: .6;
+}
+
+.post__link-image:focus{
+	opacity: .6;
 }
 
 .post__link:hover{
@@ -449,6 +453,7 @@ a{
 }
 
 .post__time{
+	font-family: "Oswald";
 	font-size: 15px;
 	font-weight: bold;
 	color: #686868;
@@ -466,8 +471,6 @@ a{
 }
 
 .post__text{
-	font-size: 16px;
-	font-family: Arial;
 	color: #3D3C3C;
 	margin-top: 13.227268%;
 	margin-bottom: 0;
@@ -481,27 +484,29 @@ a{
 .contact__form{
 	padding-top: 30px;
 	padding-bottom: 85px;
+	font-size: 0;
 }
 
 .message-form__label{
 	display: inline-block;
 	vertical-align: top;
-	width: 47.717949%;
+	width: 48.717949%;
 	font-size: 20px;
 	font-family: Arial;
 	color: #FD5433;
 }
 
 .message-form__label:nth-child(2n){
-	margin-left: 3.5641%;
+	margin-left: 2.5641%;
 }
 
 .message-form__field{
-	width: 96%;
+	box-sizing: border-box;
+	width: 100%;
 	font-size: inherit;
 	font-family: inherit;
 	outline-color: #FD5433;
-	padding: 20px 0 20px 20px;
+	padding: 20px;
 	border: 1px solid #CAC9C9;
 }
 
@@ -531,7 +536,7 @@ a{
 }
 
 .message-form__textarea .message-form__field{
-	padding-right: 1.3675214%;
+	resize: none;
 }
 
 .message-form__button{
@@ -539,9 +544,11 @@ a{
 	font-size: 26px;
 	border: none;
 	box-shadow: inset 0px 3px 12px -3px #FFFFFF;
-	width: 99.4%;
+	width: 100%;
 	cursor: pointer;
 	transition-duration: .7s;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .message-form__button:hover{

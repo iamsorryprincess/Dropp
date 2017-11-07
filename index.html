@@ -8,11 +8,11 @@
 <body>
 	<div class="page">
 		<header class="header">
-			<div class="main-container clearfix">
+			<div class="main-container header__inner">
 				<h1 class="header__logo">
 					DR<span class="header__char">O</span>PP
 				</h1>
-				<nav class="menu header__menu">
+				<nav class="menu">
 					<ul class="menu__list">
 						<li class="menu__list-item">
 							<a class="menu__link" href="#home">HOME</a>
@@ -39,18 +39,20 @@
 		<div class="home home-container" id="home">
 			<div class="main-container home__content">
 				<span class="home__text">COME,STAY FOR A COFFEE!</span>
-				<a class="home__link button" href="#0">HAVE A SEAT</a>
+				<div class="home__inner">
+					<a class="home__link button" href="#0">HAVE A SEAT</a>
+				</div>
 			</div>
 		</div>
 		<section class="services section" id="services">
 			<h2 class="section__title section__title_border_bot">SERVICES</h2>
 			<div class="main-container services__inner">
-				<article class="service services__item">
-					<div class="service__header">
+				<article class="description service services__item">
+					<div class="description__header">
 						<h3 class="service__title service__title_pen">BRANDING</h3>
 					</div>
-					<div class="service__content">
-						<p class="service__text">
+					<div class="description__content">
+						<p class="description__text service__text">
 							Lorem ipsum dolor sit amet, consectetur
 							adipisicing elit, sed do eiusmod tempor 
 							ut labore et dolore magna aliqua. Ut enim 
@@ -58,12 +60,12 @@
 						</p>
 					</div>
 				</article>
-				<article class="service services__item">
-					<div class="service__header">
+				<article class="description service services__item">
+					<div class="description__header">
 						<h3 class="service__title service__title_pc">WEB DESIGN</h3>
 					</div>
-					<div class="service__content">
-						<p class="service__text">
+					<div class="description__content">
+						<p class="description__text service__text">
 							Lorem ipsum dolor sit amet, consectetur
 							adipisicing elit, sed do eiusmod tempor 
 							ut labore et dolore magna aliqua. Ut enim 
@@ -71,12 +73,12 @@
 						</p>
 					</div>
 				</article>
-				<article class="service services__item">
-					<div class="service__header">
+				<article class="description service services__item">
+					<div class="description__header">
 						<h3 class="service__title service__title_mic">MARKETING</h3>
 					</div>
-					<div class="service__content">
-						<p class="service__text">
+					<div class="description__content">
+						<p class="description__text service__text">
 							Lorem ipsum dolor sit amet, consectetur
 							adipisicing elit, sed do eiusmod tempor 
 							ut labore et dolore magna aliqua. Ut enim 
@@ -88,7 +90,7 @@
 		</section>
 		<section class="portfolio section" id="portfolio">
 			<h2 class="section__title section__title_border_top">PORTFOLIO</h2>
-			<div class="portfolio__inner clearfix">
+			<div class="portfolio__inner">
 				<a class="portfolio__link" href="#0">
 					<img class="portfolio__image" src="images/port7.png" alt="example's image">
 				</a>
@@ -160,6 +162,23 @@
 								laborum.
 							</p>
 						</div>
+						<div class="about__links">
+							<a class="about__link" href="#0">
+								<img class="about__service-icon" src="images/facebook.png" alt="facebook icon">
+							</a>
+							<a class="about__link" href="#0">
+								<img class="about__service-icon" src="images/google.png" alt="google icon">
+							</a>
+							<a class="about__link" href="#0">
+								<img class="about__service-icon" src="images/vimeo.png" alt="vimeo icon">
+							</a>
+							<a class="about__link" href="#0">
+								<img class="about__service-icon" src="images/dribbble.png" alt="dribbble icon">
+							</a>
+							<a class="about__link" href="#0">
+								<img class="about__service-icon" src="images/youtube.png" alt="youtube icon">
+							</a>
+						</div>
 					</article>
 					<article class="description about__description">
 						<div class="description__header">
@@ -193,34 +212,19 @@
 							</div>
 						</div>
 					</article>
-					<div class="about__links">
-						<a class="about__link" href="#0">
-							<img class="about__service-icon" src="images/facebook.png" alt="facebook icon">
-						</a>
-						<a class="about__link" href="#0">
-							<img class="about__service-icon" src="images/google.png" alt="google icon">
-						</a>
-						<a class="about__link" href="#0">
-							<img class="about__service-icon" src="images/vimeo.png" alt="vimeo icon">
-						</a>
-						<a class="about__link" href="#0">
-							<img class="about__service-icon" src="images/dribbble.png" alt="dribbble icon">
-						</a>
-						<a class="about__link" href="#0">
-							<img class="about__service-icon" src="images/youtube.png" alt="youtube icon">
-						</a>
-					</div>
 				</div>
 			</div>
 		</section>
 		<section class="section latest-posts" id="blog">
 			<h2 class="section__title section__title_border_bot">LATEST POSTS</h2>
 			<div class="main-container latest-posts__inner">
-				<article class="post latest-posts__post">
-					<div class="post__header post__column">
-						<img class="post__image" src="images/post1.png" alt="post's image">
+				<article class="description post latest-posts__post">
+					<div class="description__header post__column">
+						<a class="post__link-image" href="#0">
+							<img class="post__image" src="images/post1.png" alt="post's image">
+						</a>
 					</div>
-					<div class="post__content post__column">
+					<div class="description__content post__column">
 						<h3 class="post__title">
 							<a class="post__link" href="#0">SUMMER ADVENTURES...</a>
 						</h3>
@@ -233,11 +237,13 @@
 						</p>
 					</div>
 				</article>
-				<article class="post latest-posts__post">
-					<div class="post__header post__column">
-						<img class="post__image" src="images/post2.png" alt="post's image">
+				<article class="description post latest-posts__post">
+					<div class="description__header post__column">
+						<a class="post__link-image" href="#0">
+							<img class="post__image" src="images/post2.png" alt="post's image">
+						</a>
 					</div>
-					<div class="post__content post__column">
+					<div class="description__content post__column">
 						<h3 class="post__title">
 							<a class="post__link" href="#0">HEROES: DECAT O REVI...</a>
 						</h3>
@@ -250,11 +256,13 @@
 						</p>
 					</div>
 				</article>
-				<article class="post latest-posts__post">
-					<div class="post__header post__column">
-						<img class="post__image" src="images/post3.png" alt="post's image">
+				<article class="description post latest-posts__post">
+					<div class="description__header post__column">
+						<a class="post__link-image" href="#0">
+							<img class="post__image" src="images/post3.png" alt="post's image">
+						</a>
 					</div>
-					<div class="post__content post__column">
+					<div class="description__content post__column">
 						<h3 class="post__title">
 							<a class="post__link" href="#0">ROMANIAN FOLKLORE</a>
 						</h3>
@@ -267,11 +275,13 @@
 						</p>
 					</div>
 				</article>
-				<article class="post latest-posts__post">
-					<div class="post__header post__column">
-						<img class="post__image" src="images/post4.png" alt="post's image">
+				<article class="description post latest-posts__post">
+					<div class="description__header post__column">
+						<a class="post__link-image" href="#0">
+							<img class="post__image" src="images/post4.png" alt="post's image">
+						</a>
 					</div>
-					<div class="post__content post__column">
+					<div class="description__content post__column">
 						<h3 class="post__title">
 							<a class="post__link" href="#0">WHAT’S ON DUBAI AND...</a>
 						</h3>
