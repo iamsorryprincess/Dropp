@@ -196,17 +196,26 @@ p{
 .services__inner{
 	padding-top: 62px;
 	padding-bottom: 62px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .services__item{
-	width: 31.523932%;
-	display: inline-block;
-	vertical-align: top;
-	margin-right: 2.1641026%;
+	width: 31.623932%;
+	margin-top: 30px;
 }
 
-.services__item:nth-child(3n){
-	margin-right: 0;
+.services__item:nth-child(1){
+	margin-top: 0;
+}
+
+.services__item:nth-child(2){
+	margin-top: 0;
+}
+
+.services__item:nth-child(3){
+	margin-top: 0;
 }
 
 .service__title{
@@ -271,18 +280,29 @@ p{
 
 .about__tabs{
 	margin-top: 60px;
-	text-align: center;
+	display: flex;
+	justify-content: space-around;
 }
 
 .about__tab{
-	display: inline-block;
-	vertical-align: top;
 	margin-right: 50px;
 	width: 19%;
 }
 
 .about__tab:last-child{
 	margin-right: 0;
+}
+
+.about__tab:focus{
+	outline: none;
+}
+
+.about__tab:hover .about__icon{
+	opacity: .6;
+}
+
+.about__tab:focus .about__icon{
+	opacity: .6;
 }
 
 .about__tab_active{
