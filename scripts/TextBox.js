@@ -7,11 +7,11 @@ window.onload = function(){
 		field.onblur = focusOff;
 
 		function focusOn(){
-			text.style.top = "1px";
+			text.classList.add("text-box__text_active");
 		}
 
 		function focusOff(){
-			if (field.value === "") text.style.top = "22px";
+			if (field.value === "") text.classList.remove("text-box__text_active");
 		}
 	}
 

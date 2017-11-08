@@ -516,6 +516,11 @@ p{
 	top: 22px;
 	left: 20px;
 	transition-duration: .7s;
+	cursor: text;
+}
+
+.text-box__text_active{
+	top: 1px;
 }
 
 .message-form__field::-moz-placeholder{
