@@ -367,7 +367,7 @@ p{
 	margin-top: 50px;
 }
 
-.about__soc-icon{
+.about__social{
 	display: inline-block;
 	vertical-align: top;
 	padding: 13px;
@@ -376,35 +376,35 @@ p{
 	background-size: cover;
 }
 
-.about__soc-icon_facebook{
+.about__social_facebook{
 	background-image: url("../images/facebook.png");
 }
 
-.about__soc-icon_google{
+.about__social_google{
 	background-image: url("../images/google.png");
 }
 
-.about__soc-icon_vimeo{
+.about__social_vimeo{
 	background-image: url("../images/vimeo.png");
 }
 
-.about__soc-icon_dribbble{
+.about__social_dribbble{
 	background-image: url("../images/dribbble.png");
 }
 
-.about__soc-icon_youtube{
+.about__social_youtube{
 	background-image: url("../images/youtube.png");
 }
 
-.about__soc-icon:first-child{
+.about__social:first-child{
 	margin-left: 0;
 }
 
-.about__soc-icon:hover{
+.about__social:hover{
 	opacity: .6;
 }
 
-.about__soc-icon:focus{
+.about__social:focus{
 	opacity: .6;
 	outline: none;
 }
