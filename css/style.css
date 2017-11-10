@@ -216,7 +216,6 @@ p{
 }
 
 .services__content{
-	font-size: 16px;
 	padding-left: 7.5%;
 	padding-right: 7.5%;
 }
@@ -314,10 +313,6 @@ p{
 	font-size: 22px;
 	margin-top: 0;
 	margin-bottom: 7.77193%;
-}
-
-.about__description{
-	font-size: 16px;
 }
 
 .about__skill{
@@ -499,7 +494,6 @@ p{
 	color: #3D3C3C;
 	margin-top: 13.227268%;
 	margin-bottom: 0;
-	font-size: 16px;
 }
 
 .contact__container{
