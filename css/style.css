@@ -13,27 +13,30 @@ body{
 
 h1, h2, h3, h4{
 	font-family: "Oswald";
+	margin-top: 26.56px;
+	margin-bottom: 26.56px;
 }
 
 h1{
-	margin-top: 5px;
-	margin-bottom: 5px;
+	font-size: 4.375em;
 }
 
 h2{
-	font-size: 32px;
+	font-size: 2em;
 }
 
 h3{
-	font-size: 30px;
+	font-size: 1.875em;
 }
 
 h4{
-	font-size: 22px;
+	font-size: 1.375em;
 }
 
 ul{
-	font-size: 17px;
+	font-size: 1.062em;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 p{	
@@ -67,7 +70,6 @@ p{
 	margin-top: 0;
 	margin-bottom: 0;
 	font-weight: normal;
-	font-size: 70px;
 }
 
 .header__char{
@@ -78,8 +80,6 @@ p{
 	font-family: "Oswald";
 	font-weight: bold;
 	padding-left: 0;
-	margin-top: 0;
-	margin-bottom: 0;
 }
 
 .menu__list-item{
@@ -123,7 +123,7 @@ p{
 
 .home__text{
 	color: #FFFFFF;
-	font-size: 120px;
+	font-size: 7.5em;
 }
 
 .button{
@@ -136,7 +136,7 @@ p{
 }
 
 .home__link{
-	font-size: 32px;
+	font-size: 2em;
 	display: inline-block;
 	vertical-align: top;
 	padding-right: 66px;
@@ -179,7 +179,7 @@ p{
 }
 
 .services__item{
-	width: 31.623932%;
+	width: 31.62393%;
 	padding-top: 170px;
 	margin-top: 30px;
 	background-repeat: no-repeat;
@@ -221,7 +221,8 @@ p{
 }
 
 .portfolio__inner{
-	font-size: 0;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .portfolio__link{
@@ -310,7 +311,7 @@ p{
 }
 
 .about__group-title{
-	font-size: 22px;
+	font-size: 1.375em;
 	margin-top: 0;
 	margin-bottom: 7.77193%;
 }
@@ -446,7 +447,7 @@ p{
 .posts__title{
 	margin-top: 0;
 	margin-bottom: 3.5%;
-	font-size: 25px;
+	font-size: 1.562em;
 	color: #3D3C3C;
 }
 
