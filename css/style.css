@@ -27,6 +27,7 @@ h2{
 
 h3{
 	font-size: 1.875em;
+	color: #3D3C3C;
 }
 
 h4{
@@ -209,10 +210,6 @@ p{
 
 .services__item_mic{
 	background-image: url("../images/Mic_icon.png");
-}
-
-.services__title{
-	color: #3D3C3C;
 }
 
 .services__content{
@@ -448,7 +445,6 @@ p{
 	margin-top: 0;
 	margin-bottom: 3.5%;
 	font-size: 1.562em;
-	color: #3D3C3C;
 }
 
 .posts__link-image{
