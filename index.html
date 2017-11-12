@@ -10,11 +10,11 @@
 	<div class="page">
 		<header class="header">
 			<div class="main-container header__inner">
-				<h1 class="header__logo">
+				<h1 class="title header__logo">
 					DR<span class="header__char">O</span>PP
 				</h1>
 				<nav class="menu">
-					<ul class="menu__list">
+					<ul class="list menu__list">
 						<li class="menu__list-item">
 							<a class="link menu__link" href="#home">HOME</a>
 						</li>
@@ -37,8 +37,8 @@
 				</nav>
 			</div>
 		</header>
-		<div class="home home-container" id="home">
-			<div class="main-container home__content">
+		<div class="home" id="home">
+			<div class="main-container home__container">
 				<span class="home__text">COME,STAY FOR A COFFEE!</span>
 				<div class="home__inner">
 					<a class="link home__link button" href="#0">HAVE A SEAT</a>
@@ -46,10 +46,12 @@
 			</div>
 		</div>
 		<section class="services section" id="services">
-			<h2 class="section__title">SERVICES</h2>
-			<div class="main-container services__inner">
+			<div class="section__header">
+				<h2 class="title section__title">SERVICES</h2>
+			</div>
+			<div class="main-container services__container">
 				<article class="services__item services__item_pen">
-					<h3>BRANDING</h3>
+					<h3 class="title services__title">BRANDING</h3>
 					<div class="services__content">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur
@@ -60,7 +62,7 @@
 					</div>
 				</article>
 				<article class="services__item services__item_pc">
-					<h3>WEB DESIGN</h3>
+					<h3 class="title services__title">WEB DESIGN</h3>
 					<div class="services__content">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur
@@ -71,7 +73,7 @@
 					</div>
 				</article>
 				<article class="services__item services__item_mic">
-					<h3>MARKETING</h3>
+					<h3 class="title services__title">MARKETING</h3>
 					<div class="services__content">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur
@@ -84,7 +86,9 @@
 			</div>
 		</section>
 		<section class="portfolio section" id="portfolio">
-			<h2 class="section__title">PORTFOLIO</h2>
+			<div class="section__header">
+				<h2 class="title section__title">PORTFOLIO</h2>
+			</div>
 			<div class="portfolio__inner">
 				<a class="portfolio__link" href="#0">
 					<img class="portfolio__image" src="images/port7.png" alt="example's image">
@@ -125,7 +129,9 @@
 			</div>
 		</section>
 		<section class="about section" id="about">
-			<h2 class="section__title">ABOUT US</h2>
+			<div class="section__header">
+				<h2 class="title section__title">ABOUT US</h2>
+			</div>
 			<div class="about__tabs main-container">
 				<a class="about__tab" href="#0">
 					<img class="about__icon" src="images/member1.png" alt="member's icon">
@@ -143,7 +149,7 @@
 			<div class="about__container">
 				<div class="main-container about__inner">
 					<article class="about__group">
-						<h3 class="about__group-title">John Smith - Lead Graphic Artist</h3>
+						<h3 class="title about__group-title">John Smith - Lead Graphic Artist</h3>
 						<div class="about__description">
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
@@ -164,7 +170,7 @@
 						</div>
 					</article>
 					<article class="about__group">
-						<h4 class="about__group-title">Skills</h4>
+						<h4 class="title about__group-title">Skills</h4>
 						<div class="about__description">
 							<div class="about__skill">
 								<span class="about__skill-name">PHOTOSHOP</span>
@@ -197,8 +203,10 @@
 			</div>
 		</section>
 		<section class="section posts" id="blog">
-			<h2 class="section__title">LATEST POSTS</h2>
-			<div class="main-container posts__inner">
+			<div class="section__header">
+				<h2 class="title section__title">LATEST POSTS</h2>
+			</div>
+			<div class="main-container posts__container">
 				<article class="posts__post">
 					<div class="posts__column">
 						<a class="posts__link-image" href="#0">
@@ -206,7 +214,7 @@
 						</a>
 					</div>
 					<div class="posts__column">
-						<h3 class="posts__title">
+						<h3 class="title posts__title">
 							<a class="link posts__link" href="#0">SUMMER ADVENTURES...</a>
 						</h3>
 						<time class="posts__time" datetime="2013-12-14">POSTED: DEC 14 2013</time>
@@ -225,7 +233,7 @@
 						</a>
 					</div>
 					<div class="posts__column">
-						<h3 class="posts__title">
+						<h3 class="title posts__title">
 							<a class="link posts__link" href="#0">HEROES: DECAT O REVI...</a>
 						</h3>
 						<time class="posts__time" datetime="2013-12-14">POSTED: DEC 14 2013</time>
@@ -244,7 +252,7 @@
 						</a>
 					</div>
 					<div class="posts__column">
-						<h3 class="posts__title">
+						<h3 class="title posts__title">
 							<a class="link posts__link" href="#0">ROMANIAN FOLKLORE</a>
 						</h3>
 						<time class="posts__time" datetime="2013-12-14">POSTED: DEC 14 2013</time>
@@ -263,7 +271,7 @@
 						</a>
 					</div>
 					<div class="posts__column">
-						<h3 class="posts__title">
+						<h3 class="title posts__title">
 							<a class="link posts__link" href="#0">WHAT’S ON DUBAI AND...</a>
 						</h3>
 						<time class="posts__time" datetime="2013-12-14">POSTED: DEC 14 2013</time>
@@ -278,7 +286,9 @@
 			</div>
 		</section>
 		<section class="contact section" id="contact">
-			<h2 class="section__title">CONTACT US</h2>
+			<div class="section__header">
+				<h2 class="title section__title">CONTACT US</h2>
+			</div>
 			<div class="contact__container">
 				<form class="contact__form main-container" method="post" action="#0">
 					<label class="contact__text-box">
