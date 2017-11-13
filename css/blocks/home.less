@@ -1,0 +1,42 @@
+.home{
+	background-image: url("../images/Banner_IMG.png");
+	background-color: @color-mask;
+	background-size: cover;
+	min-width: 798px;
+	box-shadow: inset 0px 0px 0px 9999px rgba(0, 0, 0, .33);
+}
+
+.home__container{
+	padding-top: 195.5px;
+	padding-bottom: 369.5px;
+	text-align: center;
+	font-family: "Oswald";
+	color: @color-white;
+}
+
+.home__inner{
+	margin-top: 48px;
+}
+
+.home__text{
+	font-size: 7.5em;
+}
+
+.home__link{
+	font-size: 2em;
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 66px;
+	padding-left: 66px;
+	border-radius: 5px;
+	box-shadow: inset 0px 3px 12px -3px @color-white;
+
+	&:hover{
+		background-color: @color-dark-orange;
+	}
+
+	&:focus{
+		outline: none;
+		background-color: @color-dark-orange;
+	}
+}

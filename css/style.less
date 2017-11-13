@@ -1,0 +1,77 @@
+@color-white: #FFFFFF;
+@color-orange: #FD5433;
+@color-dark-orange: #C94120;
+@color-mask : #515151;
+@color-gray: #828282;
+@color-dark-gray: #3D3C3C;
+@color-time-gray: #686868;
+@color-light-gray: #CAC9C9;
+
+@font-face{
+	font-family: "Oswald";
+	src: url("../fonts/Oswald/Oswald-Bold.ttf");
+	src: url("../fonts/Oswald/Oswald-Regular.ttf");
+}
+
+body{
+	font-family: Arial, sans-serif;
+	margin: 0;
+	background-color: @color-white;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4{
+	font-family: "Oswald";
+	margin-top: 26.56px;
+	margin-bottom: 26.56px;
+}
+
+h1{
+	font-size: 3em;
+}
+
+h2{
+	font-size: 2em;
+}
+
+h3{
+	font-size: 1.575em;
+}
+
+h4{
+	font-size: 1.175em;
+}
+
+ul{
+	font-size: 1.062em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+p{
+	margin-top: 15px;
+	margin-bottom: 15px;
+
+	&:first-child{
+		margin-top: 0;
+	}
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+@import "blocks/main-container.less";
+@import "blocks/title.less";
+@import "blocks/list.less";
+@import "blocks/link.less";
+@import "blocks/button.less";
+@import "blocks/header.less";
+@import "blocks/menu.less";
+@import "blocks/home.less";
+@import "blocks/section.less";
+@import "blocks/services.less";
+@import "blocks/portfolio.less";
+@import "blocks/about.less";
+@import "blocks/posts.less";
+@import "blocks/contact.less";

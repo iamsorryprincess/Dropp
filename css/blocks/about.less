@@ -1,0 +1,151 @@
+.about__tabs{
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.about__tab{
+	margin-right: 50px;
+	width: 19%;
+
+	&:last-child{
+		margin-right: 0;
+	}
+
+	&:focus{
+		outline: none;
+	}
+
+	&:hover .about__icon{
+		opacity: .6;
+	}
+
+	&:focus .about__icon{
+		opacity: .6;
+	}
+}
+
+.about__tab_active{
+	position: relative;
+
+	&:after{
+		content: "";
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: -125px;
+		border: 22px solid transparent;
+		border-top: 42px solid @color-white;
+	}
+}
+
+.about__icon{
+	display: block;
+	width: 100%;
+}
+
+.about__content{
+	background-color: @color-orange;
+	margin-top: 62px;
+}
+
+.about__container{
+	color: @color-white;
+	padding-top: 65px;
+	padding-bottom: 45px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.about__group{
+	width: 45.717949%;
+}
+
+.about__group-title{
+	font-size: 1.375em;
+	margin-bottom: 7.77193%;
+}
+
+.about__skill{
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.about__skill-name{
+	width: 32.277303%;
+}
+
+.about__skill-progress{
+	width: 53%;
+	height: 10px;
+	background-color: @color-white;
+}
+
+.about__skill-progress[value]::-webkit-progress-bar{
+	background-color: @color-orange;
+}
+
+.about__skill-progress[value]::-webkit-progress-value{
+	background-color: @color-white;
+}
+
+.about__skill-progress[value]::-moz-progress-bar{
+	background-color: @color-white;
+}
+
+.about__skill-value{
+	width: 10.621083%;
+	text-align: right;
+}
+
+.about__links{
+	margin-top: 50px;
+}
+
+.about__social{
+	display: inline-block;
+	vertical-align: top;
+	padding: 13px;
+	margin-left: 20px;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&:first-child{
+		margin-left: 0;
+	}
+
+	&:hover{
+		opacity: .6;
+	}
+
+	&:focus{
+		opacity: .6;
+		outline: none;
+	}
+}
+
+.about__social_facebook{
+	background-image: url("../images/facebook.png");
+}
+
+.about__social_google{
+	background-image: url("../images/google.png");
+}
+
+.about__social_vimeo{
+	background-image: url("../images/vimeo.png");
+}
+
+.about__social_dribbble{
+	background-image: url("../images/dribbble.png");
+}
+
+.about__social_youtube{
+	background-image: url("../images/youtube.png");
+}
