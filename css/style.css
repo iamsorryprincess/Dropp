@@ -18,19 +18,18 @@ h4 {
   margin-bottom: 26.56px;
 }
 h1 {
-  font-size: 3em;
+  font-size: 40px;
 }
 h2 {
-  font-size: 2em;
+  font-size: 32px;
 }
 h3 {
-  font-size: 1.575em;
+  font-size: 25px;
 }
 h4 {
-  font-size: 1.175em;
+  font-size: 19px;
 }
 ul {
-  font-size: 1.062em;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -74,13 +73,13 @@ p:last-child {
   color: #474444;
   min-width: 798px;
 }
-.header__inner {
+.header__container {
   display: flex;
   justify-content: space-between;
 }
 .header__logo {
   font-weight: normal;
-  font-size: 4.375em;
+  font-size: 70px;
 }
 .header__char {
   color: #FD5433;
@@ -89,6 +88,7 @@ p:last-child {
   font-family: "Oswald";
   font-weight: bold;
   padding-left: 0;
+  font-size: 17px;
 }
 .menu__list-item {
   display: inline-block;
@@ -112,10 +112,8 @@ p:last-child {
   background-size: cover;
   min-width: 798px;
   box-shadow: inset 0px 0px 0px 9999px rgba(0, 0, 0, 0.33);
-}
-.home__container {
-  padding-top: 195.5px;
-  padding-bottom: 369.5px;
+  padding-top: 195px;
+  padding-bottom: 369px;
   text-align: center;
   font-family: "Oswald";
   color: #FFFFFF;
@@ -123,11 +121,11 @@ p:last-child {
 .home__inner {
   margin-top: 48px;
 }
-.home__text {
-  font-size: 7.5em;
+.home__slogan {
+  font-size: 120px;
 }
 .home__link {
-  font-size: 2em;
+  font-size: 32px;
   display: inline-block;
   vertical-align: top;
   padding-right: 66px;
@@ -192,7 +190,7 @@ p:last-child {
 }
 .services__title {
   color: #3D3C3C;
-  font-size: 1.875em;
+  font-size: 30px;
 }
 .services__content {
   padding-left: 7.5%;
@@ -385,7 +383,7 @@ p:last-child {
 }
 .posts__title {
   margin-bottom: 3.5%;
-  font-size: 1.562em;
+  font-size: 25px;
   color: #3D3C3C;
 }
 .posts__link-image {
