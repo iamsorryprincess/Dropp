@@ -1,0 +1,27 @@
+{
+  "name": "dropp",
+  "version": "1.0.0",
+  "description": "my first project with gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamsorryprincess/Dropp.git"
+  },
+  "keywords": [
+    "dropp"
+  ],
+  "author": "Nikita Pankratov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamsorryprincess/Dropp/issues"
+  },
+  "homepage": "https://github.com/iamsorryprincess/Dropp#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-less": "^3.3.2"
+  }
+}
