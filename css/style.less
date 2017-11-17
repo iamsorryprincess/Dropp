@@ -1,11 +1,11 @@
-@color-white: #FFFFFF;
-@color-orange: #FD5433;
-@color-dark-orange: #C94120;
+@main-color: #FFFFFF;
+@additional-color: #FD5433;
+@additional-color-dark: #C94120;
 @color-mask : #515151;
 @color-gray: #828282;
 @color-dark-gray: #3D3C3C;
-@color-time-gray: #686868;
 @color-light-gray: #CAC9C9;
+@color-time-gray: #686868;
 
 @font-face{
 	font-family: "Oswald";
@@ -16,7 +16,7 @@
 body{
 	font-family: Arial, sans-serif;
 	margin: 0;
-	background-color: @color-white;
+	background-color: @main-color;
 	font-size: 16px;
 }
 
@@ -27,19 +27,19 @@ h1, h2, h3, h4{
 }
 
 h1{
-	font-size: 40px;
-}
-
-h2{
 	font-size: 32px;
 }
 
+h2{
+	font-size: 28px;
+}
+
 h3{
-	font-size: 25px;
+	font-size: 24px;
 }
 
 h4{
-	font-size: 19px;
+	font-size: 20px;
 }
 
 ul{
@@ -66,7 +66,6 @@ p{
 @import "blocks/link.less";
 @import "blocks/button.less";
 @import "blocks/header.less";
-@import "blocks/menu.less";
 @import "blocks/home.less";
 @import "blocks/section.less";
 @import "blocks/services.less";

@@ -18,16 +18,16 @@ h4 {
   margin-bottom: 26px;
 }
 h1 {
-  font-size: 40px;
-}
-h2 {
   font-size: 32px;
 }
+h2 {
+  font-size: 28px;
+}
 h3 {
-  font-size: 25px;
+  font-size: 24px;
 }
 h4 {
-  font-size: 19px;
+  font-size: 20px;
 }
 ul {
   margin-top: 10px;
@@ -52,6 +52,15 @@ p:last-child {
 .title {
   margin-top: 0;
   margin-bottom: 0;
+}
+.title_h {
+  font-size: 70px;
+}
+.title_m {
+  font-size: 32px;
+}
+.title_l {
+  font-size: 22px;
 }
 .list {
   margin-top: 0;
@@ -83,29 +92,28 @@ p:last-child {
 }
 .header__logo {
   font-weight: normal;
-  font-size: 70px;
 }
 .header__char {
   color: #FD5433;
 }
-.menu__list {
+.header__list {
   font-family: "Oswald";
   font-weight: bold;
   padding-left: 0;
   font-size: 17px;
 }
-.menu__list-item {
+.header__list-item {
   display: inline-block;
 }
-.menu__link {
+.header__link {
   display: inline-block;
   padding: 42.5px 15px;
 }
-.menu__link:hover {
+.header__link:hover {
   background-color: #FD5433;
   color: #FFFFFF;
 }
-.menu__link:focus {
+.header__link:focus {
   outline: none;
   background-color: #FD5433;
   color: #FFFFFF;
@@ -300,7 +308,6 @@ p:last-child {
   width: 45.717949%;
 }
 .about__group-title {
-  font-size: 1.375em;
   margin-bottom: 7.77193%;
 }
 .about__skill {

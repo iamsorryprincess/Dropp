@@ -10,9 +10,35 @@
 
 .header__logo{
 	font-weight: normal;
-	font-size: 70px;
 }
 
 .header__char{
-	color: @color-orange;
+	color: @additional-color;
+}
+
+.header__list{
+	font-family: "Oswald";
+	font-weight: bold;
+	padding-left: 0;
+	font-size: 17px;
+}
+
+.header__list-item{
+	display: inline-block;
+}
+
+.header__link{
+	display: inline-block;
+	padding: 42.5px 15px;
+
+	&:hover{
+		background-color: @additional-color;
+		color: @main-color;
+	}
+
+	&:focus{
+		outline: none;
+		background-color: @additional-color;
+		color: @main-color;
+	}
 }
