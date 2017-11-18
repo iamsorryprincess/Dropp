@@ -14,8 +14,6 @@ h2,
 h3,
 h4 {
   font-family: "Oswald";
-  margin-top: 26px;
-  margin-bottom: 26px;
 }
 h1 {
   font-size: 32px;
@@ -62,10 +60,6 @@ p:last-child {
 .title_l {
   font-size: 22px;
 }
-.list {
-  margin-top: 0;
-  margin-bottom: 0;
-}
 .link {
   text-decoration: none;
   color: inherit;
@@ -99,6 +93,8 @@ p:last-child {
 .header__list {
   font-family: "Oswald";
   font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 0;
   font-size: 17px;
 }
