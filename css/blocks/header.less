@@ -1,6 +1,7 @@
 .header{
 	color: #474444;
-	min-width: 798px;
+	background-color: @main-color;
+	width: 100%;
 }
 
 .header__container{
@@ -22,7 +23,7 @@
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0;
-	font-size: 17px;
+	font-size: 1.062em;
 }
 
 .header__list-item{
@@ -42,5 +43,32 @@
 		outline: none;
 		background-color: @additional-color;
 		color: @main-color;
+	}
+}
+
+@media screen and(max-width: 699px) {
+	.header{
+		position: fixed;
+		border-bottom: 3px solid @additional-color;
+	}
+
+	.header__container{
+		display: block;
+	}
+
+	.header__logo{
+		text-align: center;
+	}
+
+	.header__menu{
+		text-align: center;
+	}
+
+	.header__list{
+		font-size: 7px;
+	}
+
+	.header__link{
+		padding: 5px 10px;
 	}
 }

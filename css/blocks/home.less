@@ -2,29 +2,29 @@
 	background-image: url("../images/Banner_IMG.png");
 	background-color: @color-mask;
 	background-size: cover;
-	min-width: 798px;
 	box-shadow: inset 0px 0px 0px 9999px rgba(0, 0, 0, .33);
-	padding-top: 195px;
-	padding-bottom: 369px;
+	padding-top: 10%;
+	padding-bottom: 20%;
 	text-align: center;
 	font-family: "Oswald";
 	color: @main-color;
 }
 
 .home__inner{
-	margin-top: 48px;
+	margin-top: 5%;
 }
 
 .home__slogan{
-	font-size: 120px;
+	font-size: 7.5em;
+	text-transform: uppercase;
 }
 
 .home__link{
-	font-size: 32px;
+	font-size: 2em;
 	display: inline-block;
 	vertical-align: top;
-	padding-right: 66px;
-	padding-left: 66px;
+	padding-right: 6%;
+	padding-left: 6%;
 	border-radius: 5px;
 	box-shadow: inset 0px 3px 12px -3px @main-color;
 
@@ -35,5 +35,15 @@
 	&:focus{
 		outline: none;
 		background-color: @additional-color-dark;
+	}
+}
+
+@media screen and(max-width: 699px) {
+	.home__slogan{
+		font-size: 3.5em;
+	}
+
+	.home__link{
+		font-size: 1em;
 	}
 }

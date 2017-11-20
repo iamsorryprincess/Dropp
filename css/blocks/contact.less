@@ -17,10 +17,6 @@
 	font-family: Arial;
 	color: @additional-color;
 	position: relative;
-
-	&:nth-child(2n){
-		margin-left: 2.5641%;
-	}
 }
 
 .contact__text-field{
@@ -88,4 +84,22 @@ textarea.contact__text-field{
 
 .contact__text_bold{
 	font-weight: bold;
+}
+
+@media screen and(min-width: 700px){
+	.contact__text-box{
+		&:nth-child(2n){
+			margin-left: 2.5641%;
+		}
+	}
+}
+
+@media screen and(max-width: 699px){
+	.contact__text-box{
+		width: 100%;
+
+		&:nth-child(2n){
+			margin-top: 2.5641%;
+		}
+	}
 }

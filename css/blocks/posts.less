@@ -14,15 +14,7 @@
 	margin-top: 90px;
 
 	&:first-child{
-		margin-top: 0;
-	}
-
-	&:nth-child(2){
-		margin-top: 0;
-	}
-
-	&:nth-child(2n){
-		margin-left: 3.815385%;
+			margin-top: 0;
 	}
 }
 
@@ -44,7 +36,7 @@
 
 .posts__title{
 	margin-bottom: 3.5%;
-	font-size: 25px;
+	font-size: 1.562em;
 	color: @color-dark-gray;
 }
 
@@ -74,7 +66,7 @@
 
 .posts__time{
 	font-family: "Oswald";
-	font-size: 15px;
+	font-size: 0.937em;
 	font-weight: bold;
 	color: @color-time-gray;
 	padding-bottom: 3.5%;
@@ -93,4 +85,28 @@
 .posts__text{
 	color: @color-gray;
 	margin-top: 13.227268%;
+}
+
+@media screen and(min-width: 700px){
+	.posts__post{
+		&:nth-child(2){
+			margin-top: 0;
+		}
+
+		&:nth-child(2n){
+			margin-left: 3.815385%;
+		}
+	}
+}
+
+@media screen and(max-width: 699px){
+	.posts__container{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.posts__post{
+		width: 100%;
+		margin-top: 20px;
+	}
 }
