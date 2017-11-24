@@ -8,7 +8,6 @@
 }
 
 .posts__post{
-	width: 47.5%;
 	display: inline-block;
 	vertical-align: top;
 	margin-top: 90px;
@@ -19,7 +18,6 @@
 }
 
 .posts__column{
-	width: 46.368421%;
 	display: inline-block;
 	vertical-align: top;
 	margin-left: 5.2631579%;
@@ -89,6 +87,8 @@
 
 @media screen and(min-width: 700px){
 	.posts__post{
+		width: 47.5%;
+
 		&:nth-child(2){
 			margin-top: 0;
 		}
@@ -96,6 +96,10 @@
 		&:nth-child(2n){
 			margin-left: 3.815385%;
 		}
+	}
+
+	.post__column{
+		width: 46.368421%;
 	}
 }
 
@@ -106,7 +110,13 @@
 	}
 
 	.posts__post{
-		width: 100%;
 		margin-top: 20px;
+		display: flex;
+    	flex-direction: column;
+    	align-items: center;
+	}
+
+	.posts__column{
+		text-align: center;
 	}
 }
