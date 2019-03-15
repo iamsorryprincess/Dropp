@@ -515,6 +515,7 @@ p:last-child {
   display: inline-block;
   vertical-align: top;
   margin-left: 5.2631579%;
+  width: 46%;
 }
 .posts__column:first-child {
   margin-left: 0;
